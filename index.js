@@ -43,6 +43,12 @@ app.post('/biodata', (req, res) => {
     .catch(err => console.error(err));
 });
 
+// PUT (Update Data)
+app.put('/biodata/:id', (req, res) => {
+  const { id } = req.params;
+  const { nama, nim, kelas } = req.body;
+
+});
 
 
 app.listen(port, () => {
